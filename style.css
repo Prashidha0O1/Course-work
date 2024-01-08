@@ -1,0 +1,71 @@
+body {
+  background-color: orange;
+}
+.navbar {
+  background-color: orange;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Set the social media icon images */
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.slogan {
+  color: orange;
+  font-size: 50px;
+  font-weight: bold; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Css For Hero*/
+.hero {
+background-image: url('https://evo3d.co.uk/cdn/shop/products/01_800x.jpg?v=1666343885');
+background-repeat: no-repeat;
+background-size: cover;
+height: 1000px;
+width: 1000px;
+position: relative;
+}
+/* CSS for Brand */
+.brand {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* marquee content */
+.brand img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin-right: 20px;
+}
