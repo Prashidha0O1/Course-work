@@ -1,0 +1,248 @@
+body{
+    background-color: #000080;
+}
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  #logo{
+      top: 0;
+      background-color: #000080;
+  }
+  #Home{
+      top: 20px;
+      background-color: #000080;
+  }
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 80px;
+    background-color: #000080;
+  }
+  
+  #blog {
+    top: 140px;
+    background-color: #000080; /* Blue */
+  }
+  
+  #projects {
+    top: 200px;
+    background-color: #000080; /* Red */
+  }
+  
+  #contact {
+    top: 260px;
+    background-color: #000080 /* Light Black */
+  }
+  .hero {
+    background-image: url('./src/a\ man\ printing\ something\ from\ printer\ blur.png');
+    background-size: cover;
+    background-position: center;
+    height: 1000px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .hero-content {
+    position: absolute;
+  }
+  .shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .marquee {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marqueeAnimation 20s linear infinite; 
+  }
+  
+  .marquee-content img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    margin-right: 20px;
+  }
+@keyframes marqueeAnimation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+body {
+    background-color: white; 
+    color: black; 
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px; 
+    background-color: orange; 
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #0f0f0f;
+    margin-bottom: 35px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #FFA500; 
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Remove the background color property */
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    padding: 20px; 
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+}
+
+.about-content {
+    flex: 1;
+    /* Remove the background color property */
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0a0a0a;
+}
+
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caF50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.about-content .read-more:hover {
+    background-color: #3e8e41;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+}
+
+.feature {
+  flex: 1; 
+  min-width: 30%;
+  max-width: 30%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px; 
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #777;
+}
+
+/* Add transitions */
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}

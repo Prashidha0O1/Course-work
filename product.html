@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <div class="logo">
+              <a href="#"><img src="./src/Logo111 (1).png" alt="Logo"></a>
+            </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Research</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">Cart</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+
+    <nav>
+        <div>
+            <label>Filter</label>
+            <label><input type="radio" name="category" value="all" checked> All</label>
+            <label><input type="radio" name="category" value="laser"> Laser</label>
+            <label><input type="radio" name="category" value="inkjet"> Inkjet</label>
+            <label><input type="radio" name="category" value="3d-printer"> 3D Printer</label>
+        </div>
+
+        <div>
+            <label>Brand</label>
+            <label><input type="radio" name="brand" value="all" checked> All</label>
+            <label><input type="radio" name="brand" value="sony"> Sony</label>
+            <label><input type="radio" name="brand" value="hp"> HP</label>
+            <label><input type="radio" name="brand" value="epson"> EPSON</label>
+            <label><input type="radio" name="brand" value="canon"> Canon</label>
+            <label><input type="radio" name="brand" value="brother"> Brother</label>
+        </div>
+
+        <div>
+            <label>Location</label>
+            <label> <input type="radio" name="Location" value="US">US</label>
+            <label> <input type="radio" name="Location" value="Nepal">Nepal</label>
+        </div>
+    </nav>
+
+    <section>
+        <div class="product-item">
+            <img src="./src/HP.png" alt="Product 1">
+            <h3>HP 2020</h3>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="product-price">$199.99</p>
+            <button class="add-to-cart" onclick="addToCart('HP 2020')">Add to Cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="./src/HP.png" alt="Product 2">
+            <h3>HP 2023</h3>
+            <p class="product-description">haha, You wont find noone better than me </p>
+            <p class="product-price">$249.99</p>
+            <button class="add-to-cart" onclick="addToCart('HP 2023')">Add to Cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="./src/HP.png" alt="Product 3">
+            <h3>HP 2024</h3>
+            <p class="product-description">Best Product You'll ever see</p>
+            <p class="product-price">Rs.10700</p>
+            <button class="add-to-cart" onclick="addToCart('HP 2024')">Add to Cart</button>
+        </div>
+    </section>
+
+    <script>
+        function addToCart(productName) {
+            alert(`${productName} was added to the cart!`);
+        }
+    </script>
+
+</body>
+
+</html>
