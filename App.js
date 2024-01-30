@@ -14,3 +14,7 @@ function toggleContent() {
         readMoreButton.innerHTML = "Read more";
     }
 }
+
+function subscribeAlert() {
+    alert("Thank you for subscribing!"); 
+    } 

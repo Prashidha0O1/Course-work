@@ -45,7 +45,7 @@ body{
     background-color: #000080 /* Light Black */
   }
   .hero {
-    background-image: url('./src/a\ man\ printing\ something\ from\ printer\ blur.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.279), rgba(0,0,0,0.279)), url('./src/home.jpg');
     background-size: cover;
     background-position: center;
     height: 1000px; 
@@ -67,37 +67,6 @@ body{
     transition: background-color 0.3s;
   }
 
-  .marquee {
-    height: 90px;
-    overflow: hidden;
-    position: relative;
-    background-color: black;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .marquee-content {
-    display: flex;
-    animation: marqueeAnimation 20s linear infinite; 
-  }
-  
-  .marquee-content img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100px;
-    margin-right: 20px;
-  }
-@keyframes marqueeAnimation {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
 
 body {
     background-color: white; 
@@ -246,3 +215,6 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
+
+
+
